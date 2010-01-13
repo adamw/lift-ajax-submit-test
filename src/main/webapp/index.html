@@ -1,0 +1,24 @@
+<lift:surround with="default" at="content">
+    <p>
+        <lift:helloWorld.edit form="post" id="cont_edit">
+            <table>
+                <tr>
+                    <td>Container name:</td>
+                    <td><cont:name /></td>
+                </tr>
+                <tr>
+                    <td>Room name:</td>
+                    <td>
+                        <ul>
+                            <cont:rooms>
+                                <li><room:name /></li>
+                            </cont:rooms>
+                        </ul>
+                        <cont:addRoom />
+                    </td>
+                </tr>
+            </table>
+        </lift:helloWorld.edit>
+    </p>
+</lift:surround>
+
